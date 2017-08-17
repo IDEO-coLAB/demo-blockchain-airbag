@@ -17,7 +17,11 @@ Other code references used:
 
 1. Clone this repo and download [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 
-2. Upload firmware to two Arduinos: point of Manufacture and point of Install.
+2. Install Sparkfun Simultaneous RFID Tag Reader Library for Arduino.
+- In Arduino IDE open the Manage Libraries panel (`Sketch` > `Include Library` > `Manage Libraries`)
+- Search for "sparkfun rfid" and install "Sparkfun Simultaneous RFID Tag Reader"
+
+3. Upload firmware to two Arduinos: point of Manufacture and point of Install.
 - In Arduino IDE, set board to `Arduino/Genuino Uno`
 For Manufacture
 - File name: `./finalAssets/arduino/arduino.ino`
