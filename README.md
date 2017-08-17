@@ -1,5 +1,5 @@
 # BlokMotiv
-A physical/digital tagging system that enables transparency and traceability through aggregated identity and shared truth
+A physical/digital tagging system that enables transparency and traceability through aggregated identity and shared truth using a blockchain.
 
 ## Packages used 
 
