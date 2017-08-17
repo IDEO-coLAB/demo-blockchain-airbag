@@ -44,6 +44,8 @@ For Install
 	- Currently, server is running on localhost:8000
 
 8. Open index.html in browser
+
+9. To clear list of parts in interface, delete `db.json`
  
 ## Bill of Materials
 
