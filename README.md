@@ -3,11 +3,6 @@ A physical/digital tagging system that enables transparency and traceability thr
 
 ## Packages used 
 
-Download these packages before you run the code. 
-
-- Node JS (https://nodejs.org/en/)
-- Express JS (https://expressjs.com/)
-	- npm install express --save
 - Serialport JS (https://www.npmjs.com/package/serialport, v4.0.7) <-- Make sure to install v4.0.7, and NOT the latest version, v5.0
 	- npm install serialport@v4.0.7
 - Socket I/O (https://socket.io/)
@@ -18,27 +13,31 @@ Other code references used:
 - Tierion Data API (https://tierion.com/docs/dataapi)
 - Merkle Tools JS (https://github.com/Tierion/merkle-tools)
 
-## How to Run 
+## How to Run
 
-1. Upload 'Manufacture' code into 1 Arduino  
+1. Clone this repo and download [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+
+2. Upload 'Manufacture' code into 1 Arduino  
 	- File name: arduino.ino
 	- Set line 87 to "Serial.println('w')"
 	- Upload file to Arduino 
 
-2. Upload 'Install' code into another Arduino
+3. Upload 'Install' code into another Arduino
 	- File name: arduino.ino
 	- Set line 87 to "Serial.println('r')"
 	- Upload file to Arduino 
 
-3. Connect Arduino (w/ RFID readers attached) to computer 
+4. Connect Arduino (w/ RFID readers attached) to computer 
 
-4. Go to ./finalAssets/
+5. Install packages with `npm install`
 
-5. Run server
+6. Go to ./finalAssets/
+
+7. Run server
 	- In terminal, run "node server.js" 
 	- Currently, server is running on localhost:8000
 
-6. Open index.html in browser
+8. Open index.html in browser
  
 ## Bill of Materials
 
