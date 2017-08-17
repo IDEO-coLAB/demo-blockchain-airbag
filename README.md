@@ -47,7 +47,9 @@ You'll know the server is connected to each Arduino when it prints
 
 8. Open index.html in browser
 
-9. To clear list of parts in interface, delete `db.json`
+9. To clear list of parts in interface, delete `db.json`. When you have an empty `db.json`, scan all 6 permutations of any particular airbag assembly into the Manufacture Arduino (labelled A). Since each bag has 3 tag, you do so by scanning each tag sequentially, for all possible sequences. This is because in the merkle tree of the three individual RFID tag ids, order matters, so when scanning on the Install reader, you may get a different scan order and hence different merkle root each time, so even a valid airbag might appear invalid if it's constituent tags were scanned in a different order during Manufacture.
+
+10. Do not scan the airbag labelled B on the Manufacture Arduino - or it will record it as a legitimately manufactured airbag.
  
 ## Bill of Materials
 
