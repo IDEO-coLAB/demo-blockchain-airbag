@@ -21,7 +21,7 @@ Other code references used:
 In Arduino IDE open the Manage Libraries panel (`Sketch` > `Include Library` > `Manage Libraries`). Search for "sparkfun rfid" and install "Sparkfun Simultaneous RFID Tag Reader"
 
 3. Upload firmware to two Arduinos: point of Manufacture and point of Install.
-In Arduino IDE, set board to `Arduino/Genuino Uno`
+In Arduino IDE, set board to `Arduino/Genuino Uno`. 
 
 For Manufacture
 - File name: `./finalAssets/arduino/arduino.ino`
@@ -40,8 +40,10 @@ For Install
 6. Go to ./finalAssets/
 
 7. Run server
-	- In terminal, run "node server.js" 
-	- Currently, server is running on localhost:8000
+- In terminal, run "node server.js" 
+- Currently, server is running on localhost:8000
+You'll know the server is connected to each Arduino when it prints 
+`Communication is on! Successfully connected to Arduino` in the terminal. The RFID readers can be flakey. If Arduino is connecting but not reading RFID tags, try power cycling and restarting server.
 
 8. Open index.html in browser
 
