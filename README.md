@@ -29,14 +29,9 @@ For Manufacture
 - Upload file to Arduino
 
 For Install
-- File name: `./finalAssets/arduino/arduino.ino`
-- Set line 87 to "Serial.println('w')"
+- File name: `./finalAssets/arduino/arduino.ino` (same file as Manufacture)
+- Set line 87 to "Serial.println('r')"
 - Upload file to Arduino 
-
-3. Upload 'Install' code into another Arduino
-	- File name: `./finalAssets/arduino/arduino.ino` (same file as Manufacture)
-	- Set line 87 to "Serial.println('r')"
-	- Upload file to Arduino 
 
 4. Connect Arduino (w/ RFID readers attached) to computer 
 
