@@ -22,7 +22,7 @@ void setup() {
 
   if (setupNano(38400) == false) //Configure nano to run at 38400bps
   {
-//    Serial.println(F("Module failed to respond. Please check wiring."));
+    Serial.println(F("Module failed to respond. Please check wiring."));
     while (1); //Freeze!
   }
 
@@ -84,7 +84,7 @@ struct EPCs {
         Serial.print(F("  "));
       
       }
-    Serial.println("w");
+    Serial.println("r");
   }
 
   void reset() {
