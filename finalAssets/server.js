@@ -264,7 +264,7 @@ function openFn() {
 function dataFn(data) {
 	console.log("Serial: " + data);
 
-	if (data.match(/(([a-zA-Z0-9]{2}\s){12}\s\s){3}[wr]/)) { 
+	if (data.match(/(([a-zA-Z0-9]{1,2}\s){12}\s\s){3}[wr]/)) { 
 
 		var status = parseAndAddTags(data);   // parse from string to array 
 		console.log("Status: " + status);
