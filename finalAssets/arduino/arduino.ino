@@ -9,7 +9,6 @@ RFID nano; //Create instance
 //#define BUZZER1 0 //For testing quietly
 #define BUZZER2 10
 
-
 void setup() {
   Serial.begin(115200);
 
@@ -35,7 +34,11 @@ void setup() {
 
   Serial.println("Go!");
   Serial.println("Enter 'k' to begin read");
-
+  tone(BUZZER1, 2093);
+  delay(150);
+  tone(BUZZER1, 2637);
+  delay(150);
+  noTone(BUZZER1);
 }
 
 struct EPCs { 
@@ -148,11 +151,7 @@ void loop() {
                       epcs.save(currTag, tagEPCBytes); 
                       
                       tone(BUZZER1, 2093); //C
-                      delay(150);
-                      tone(BUZZER1, 2349); //D
-                      delay(150);
-                      tone(BUZZER1, 2637); //E
-                      delay(150);
+                      delay(30);
                       noTone(BUZZER1);
                     }
                     for (int n=0;n<12;n++){lastTag[n]=currTag[n];}
@@ -165,6 +164,13 @@ void loop() {
         }
         
         if (epcs.num == 3) { 
+          tone(BUZZER1, 2093); //C
+          delay(150);
+          tone(BUZZER1, 2349); //D
+          delay(150);
+          tone(BUZZER1, 2637); //E
+          delay(150);
+          noTone(BUZZER1);
            epcs.printTagsToSerial(); 
            
            epcs.reset(); 
