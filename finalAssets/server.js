@@ -149,6 +149,9 @@ function parseAndAddTags(tagString) { // returns the status as 'r' or 'w' sot th
 		EPCTags.push(tag);
 	}
 
+	console.log('before sort', EPCTags);
+	EPCTags.sort();
+	console.log('after sort', EPCTags);
 	var status = tagChars[(tagLength + 2) * 3];
 	console.log(status);
 	
